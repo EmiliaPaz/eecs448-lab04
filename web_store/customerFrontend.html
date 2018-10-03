@@ -8,16 +8,16 @@
 	</head>
 
 	<body>
-        <form action="customerBackend.php" method="post">
+        <form action="customerBackend.php" method="POST" onsubmit="return validate()">
             <h2> Credentials: </h2>
             <table>
                 <tr>
                     <td> Email: </td>
-                    <td> <input type="email" id="username" name="username"> </td>
+                    <td> <input type="email" id="username" name="username" required> </td>
                 </tr>
                 <tr>
                     <td> Password: </td>
-                    <td> <input type="password" id="password" name="password"> </td>
+                    <td> <input type="password" id="password" name="password" required> </td>
                 </tr>
             </table>
 
@@ -34,17 +34,17 @@
     				<tr>
                         <td> <img src="img/taco.jpg" alt="Tacos" width="100" height="100"> </td>
     					<td class="price">$5.00</td>
-    					<td><input type="text" name="tacos_q" id="tacos_q" required></td>
+    					<td><input type="number" name="tacos_q" id="tacos_q" required></td>
     				</tr>
     				<tr>
                         <td> <img src="img/burger.jpg" alt="Burger" width="100" height="100"> </td>
     					<td class="price">$7.5</td>
-    					<td><input type="text" name="chips_q" id="chips_q" required></td>
+    					<td><input type="number" name="burger_q" id="burger_q" required></td>
                     </tr>
     				<tr>
                         <td> <img src="img/hotdog.jpg" alt="Hot Dog" width="100" height="100"> </td>
     					<td class="price">$1.5</td>
-    					<td><input type="text" name="coke_q" id="coke_q" required></td>
+    					<td><input type="number" name="hotdog_q" id="hotdog_q" required></td>
                     </tr>
     			</tbody>
             </table>
@@ -72,7 +72,7 @@
         				<tr>
                             <td> 7 days </td>
         					<td class="price">Free</td>
-        					<td><input type="radio" name="delivery" value="7"></td>
+        					<td><input type="radio" name="delivery" value="7" checked="checked"></td>
                         </tr>
         			</tbody>
                 </table>
