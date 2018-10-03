@@ -1,14 +1,14 @@
 body {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
-     background-size: cover;
+    background-size: cover;
 }
 
 h2 {
     font-size: 20px;
 }
 
-th, td{
+#form th, td{
     width: 120px;
     text-align: center;
 }
@@ -31,4 +31,24 @@ input{
 
 .button:hover{
     background-color: #e67e22;
+}
+
+/*php*/
+h3{
+    font-size: 20px;
+}
+
+#receipt {
+    width: 600px;
+    background-color: #d0d3d4;
+    border-color: white;
+    border-style: dashed;
+    border-collapse: collapse;
+}
+
+#receipt th, #receipt td{
+    width: 600px;
+    background-color: #d0d3d4;
+    border-color: white;
+    border-style: solid;
 }

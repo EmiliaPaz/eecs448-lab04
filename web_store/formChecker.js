@@ -1,18 +1,24 @@
-let validate = function(){
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    let tacos = parseInt(document.getElementById("tacos_q").value);
-    let burger = parseInt(document.getElementById("burger_q").value);
-    let hotdog = parseInt(document.getElementById("hotdog_q").value);
-    let delivery = document.getElementById("delivery").value;
+var validate = function() {
 
-    // Quantities
-    if(tacos<0 || burger<0 || hotdog<0)
-    {
-        window.alert("Invalid quantity. Need at least one of each item");
-        return false;
+	let quantities = [
+		parseInt(document.getElementById('tacos_q').value,10),
+		parseInt(document.getElementById('burger_q').value,10),
+		parseInt(document.getElementById('hotdog_q').value,10)
+	]
+
+    for(let i=0; i<3; i++){
+        if(quantities[i] <= 0)
+        {
+            alert("Invalid quantity. You must enter at least one of each item");
+            return false;
+        }
     }
 
-    return true;
+    // HTML verifies user name is in the form of an email address
 
+    // HTML requires an input for password
+
+    // HTML defaults free shipping option
+
+	return true
 }

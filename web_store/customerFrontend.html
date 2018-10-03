@@ -8,7 +8,7 @@
 	</head>
 
 	<body>
-        <form action="customerBackend.php" method="POST" onsubmit="return validate()">
+        <form action="customerBackend.php" method="post" onsubmit="return validate()">
             <h2> Credentials: </h2>
             <table>
                 <tr>
@@ -62,17 +62,17 @@
         				<tr>
                             <td> Overnight </td>
         					<td class="price">$50.00</td>
-        					<td><input type="radio" name="delivery" value="overnight"></td>
+        					<td><input type="radio" name="shipping" value="Overnight"></td>
         				</tr>
         				<tr>
                             <td> 3 days </td>
         					<td class="price">$5.00</td>
-        					<td><input type="radio" name="delivery" value="3"></td>
+        					<td><input type="radio" name="shipping" value="3 days"></td>
                         </tr>
         				<tr>
                             <td> 7 days </td>
         					<td class="price">Free</td>
-        					<td><input type="radio" name="delivery" value="7" checked="checked"></td>
+        					<td><input type="radio" name="shipping" value="7 days" checked="checked"></td>
                         </tr>
         			</tbody>
                 </table>
