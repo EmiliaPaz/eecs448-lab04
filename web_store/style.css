@@ -1,0 +1,34 @@
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+th, td{
+    width: 120px;
+    text-align: center;
+}
+
+input{
+    width: 120px;
+}
+
+#username, #password{
+    width: 240px;
+}
+
+.button{
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    background-color: #f5b041;
+    height: 30px;
+    color: white
+}
+
+.button:hover{
+    background-color: #e67e22;
+}
