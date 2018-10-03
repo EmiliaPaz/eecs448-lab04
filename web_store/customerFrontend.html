@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Web store </title>
+        <script type="text/javascript" src="formChecker.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body>
+        <form action="customerBackend.php" method="post">
+            <h2> Credentials: </h2>
+            Email: <input type="email" id="username" name="username"> <br>
+            Password: <input type="password" id="password" name="password"> <br>
+
+            <h2> Items: </h2>
+            <table>
+    			<thead>
+    				<tr>
+    					<th>Item</th>
+    					<th>Price</th>
+    					<th>Amount</th>
+    				</tr>
+    			</thead>
+			    <tbody>
+    				<tr>
+                        <td> <img src="img/taco.jpg" alt="Tacos" width="100" height="100"> </td>
+    					<td class="price">$5.00</td>
+    					<td><input type="text" name="tacos_q" id="tacos_q" required></td>
+    				</tr>
+    				<tr>
+                        <td> <img src="img/burger.jpg" alt="Burger" width="100" height="100"> </td>
+    					<td class="price">$7.5</td>
+    					<td><input type="text" name="chips_q" id="chips_q" required></td>
+                    </tr>
+    				<tr>
+                        <td> <img src="img/hotdog.jpg" alt="Hot Dog" width="100" height="100"> </td>
+    					<td class="price">$1.5</td>
+    					<td><input type="text" name="coke_q" id="coke_q" required></td>
+                    </tr>
+    			</tbody>
+            </table>
+
+            <h2> Shipping: </h2>
+                <table>
+        			<thead>
+        				<tr>
+        					<th>Time</th>
+        					<th>Price</th>
+        					<th>Amount</th>
+        				</tr>
+        			</thead>
+    			    <tbody>
+        				<tr>
+                            <td> Overnight </td>
+        					<td class="price">$50.00</td>
+        					<td><input type="radio" name="delivery" value="overnight"></td>
+        				</tr>
+        				<tr>
+                            <td> 3 days </td>
+        					<td class="price">$5.00</td>
+        					<td><input type="radio" name="delivery" value="3"></td>
+                        </tr>
+        				<tr>
+                            <td> 7 days </td>
+        					<td class="price">Free</td>
+        					<td><input type="radio" name="delivery" value="7"></td>
+                        </tr>
+        			</tbody>
+                </table>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+	</body>
+</html>
